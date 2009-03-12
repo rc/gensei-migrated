@@ -4,4 +4,5 @@
 
 *Latest released sources:*
 
-  [http://gensei.googlecode.com/svn/web/snapshot/gensei.tar.gz gensei.tar.gz]
+  http://gensei.googlecode.com/svn/web/snapshot/gensei.tar.gz
+ 
