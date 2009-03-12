@@ -4,6 +4,6 @@
 
 *Latest released sources:*
 
-  http://gensei.googlecode.com/files/gensei-2009.1.tgz
+  http://gensei.googlecode.com/files/gensei-2009.1.tar.gz
 
 Git repository will be here too.
