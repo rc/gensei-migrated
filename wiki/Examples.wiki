@@ -1,3 +1,10 @@
 #summary Examples
 
-Examples of gensei usage will be here.
+ # One of generated slices:
+   http://gensei.googlecode.com/svn/web/examples/slice.05.00_70.png
+ # Point grid:
+   http://gensei.googlecode.com/svn/web/examples/slice.05.00_70_point_grid.png
+ # Points:
+   http://gensei.googlecode.com/svn/web/examples/slice.05.00_70_points.png
+ # Reconstructed 3D structure (not smoothed):
+   http://gensei.googlecode.com/svn/web/examples/snapshot.png
