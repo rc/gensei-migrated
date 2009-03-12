@@ -1,0 +1,3 @@
+#summary front page.
+
+gensei = generator of serial images, or a [http://en.wikipedia.org/wiki/Gensei-ryū  karate style] (gen = mysterious, sei control, system), meaning that the methods of quantitative histology (or stereology) are a mysterious process for me :)
