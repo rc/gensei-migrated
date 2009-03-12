@@ -1,4 +1,5 @@
 #summary Examples
+#labels Featured
 
  # One of generated slices:
    http://gensei.googlecode.com/svn/web/examples/slice.05.00_70.png
