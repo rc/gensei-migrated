@@ -1,0 +1,7 @@
+#summary Download instructions and files.
+
+[http://code.google.com/p/gensei/downloads/list (All downloads)]
+
+*Latest released sources:*
+
+  http://code.google.com/p/gensei/snapshot/gensei.tar.gz
