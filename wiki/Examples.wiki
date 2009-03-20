@@ -5,22 +5,21 @@
    http://gensei.googlecode.com/svn/web/examples/slice.05.00_70.png
 
 
-We assessed the \textit{volume fractions}of objects (in our case red ellipsoids obtained by sensei) $V_V(objects,ref)$  using one of stereological method made on two-dimensional serial sections and points test probe: 
+We assessed the volume fractions of objects (in our case red ellipsoids obtained by sensei) V_V(objects,ref)  using one of stereological method made on two-dimensional serial sections and points test probe: 
 
-\begin{equation} V_V(objects,ref) = \frac{V(objects)}{V(ref)} = \frac{\sum_{i=1}^m P_i}{P_T},\label{V_V_component} \end{equation}
+V_V(objects,ref) = V(objects)/V(ref) = \sum_{i=1}^m P_i/P_T,
 
-where $objects$ represents ellipsoids, $V(ref)$ is the volume of reference space, in this case the volume of whole stack of serial sections. $V(objects)$ and $V(ref)$ were estimated using the Cavalieri principle according to equation: 
+where objects represents ellipsoids, V(ref) is the volume of reference space, in this case the volume of whole stack of serial sections. V(objects) and V(ref) were estimated using the Cavalieri principle according to equation: 
 
-\begin{equation}estV(c) =  T \cdot a/p \sum_{i=1}^m P_i, \label{estV_component} \end{equation}
+estV(c) =  T * a/p \sum_{i=1}^m P_i, 
 
-where $c$ corresponds to the ellipsoids and the reference space, respectively, $a/p$ is the known area associated with each point of the test system, $T = 0.140845$ $\mu$m is the distance between two subsequent sections and $P_i$ is the number of points landing within the relevant component transect on the $i$-th section. Because the parameters of test point probe of objects and reference space were similar, the equation \ref{V_V_component} could be simplified to:
+where c corresponds to the ellipsoids and the reference space, respectively, a/p is the known area associated with each point of the test system, T = 0.140845 $\mu$m is the distance between two subsequent sections and P_i is the number of points landing within the relevant component transect on the i-th section. Because the parameters of test point probe of objects and reference space were similar, the equation V_V(objects,ref) could be simplified to:
 
-\begin{equation} 
-V_V(objects,ref) =  \frac{\sum_{i=1}^m P_i}{P_T},\label{V_V_component} \end{equation} 
+V_V(objects,ref) =  \sum_{i=1}^m P_i/P_T,
 
-where $P_i$ was a number of points of randomly translated point grid landing within the object transect on the $i$th section, $P_T$ was a number of all points of the test system. 
+where P_i was a number of points of randomly translated point grid landing within the object transect on the i-th section, P_T was a number of all points of the test system. 
 
-The examples of point test system and counting the intersections using the module PointGrid of the software Ellipse3D (http://www.ellipse.sk/index.htm, ViDiTo Systems, Košice, Slovak Republic) are shown in Fig.2 and 3. 
+The examples of point test system and counting the intersections using the module PointGrid of the software Ellipse3D (http://www.ellipse.sk/index.htm, ViDiTo Systems, Košice, Slovak Republic) follow. 
 
  # Point grid:
    http://gensei.googlecode.com/svn/web/examples/slice.05.00_70_point_grid.png
@@ -28,7 +27,7 @@ The examples of point test system and counting the intersections using the modul
    http://gensei.googlecode.com/svn/web/examples/slice.05.00_70_points.png
 
 
-The color channel serial images obtained by sensei, shown in Fig.1, was changed to gray scale using the software IrfanView (http://irfanview.tuwien.zc.zt, Irfan Skiljan, Vienna University of Technology, Vienna, Austria). The software Amira (http://www.tgs.com, TGS Inc., Massachusetts, USA) was then used for the three-dimensional reconstruction. The stack of the grey-scale images was loaded in the Amira and the threshold of objects was determined by using histogram curves and the slices were then joined together. The resultant non-smoothing model of individual objects is shown in Fig.4.
+The color channel serial images obtained by sensei, shown in Fig.1, was changed to gray scale using the software IrfanView (http://irfanview.tuwien.zc.zt, Irfan Skiljan, Vienna University of Technology, Vienna, Austria). The software Amira (http://www.tgs.com, TGS Inc., Massachusetts, USA) was then used for the three-dimensional reconstruction. The stack of the grey-scale images was loaded in the Amira and the threshold of objects was determined by using histogram curves and the slices were then joined together. The resultant non-smoothing model of individual objects is shown in following figure.
 
  # Reconstructed 3D structure (not smoothed):
    http://gensei.googlecode.com/svn/web/examples/snapshot.png
