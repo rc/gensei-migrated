@@ -26,7 +26,7 @@ The examples of point test system and counting the intersections using the modul
    http://gensei.googlecode.com/svn/web/examples/slice.05.00_70_points.png
 
 
-The color channel serial images obtained by *sensei* was changed to gray scale using the *software !IrfanView* (http://irfanview.tuwien.zc.at, Irfan Skiljan, Vienna University of Technology, Vienna, Austria). The *software Amira* (http://www.tgs.com, TGS Inc., Massachusetts, USA) was then used for the three-dimensional reconstruction. The stack of the grey-scale images was loaded in the Amira and the threshold of objects was determined by using histogram curves and the slices were then joined together. The resultant non-smoothing model of individual objects is shown in following figure.
+The color channel serial images obtained by *sensei* was changed to gray scale using the *software !IrfanView* (http://www.irfanview.com, Irfan Skiljan, Vienna University of Technology, Vienna, Austria). The *software Amira* (http://www.tgs.com, TGS Inc., Massachusetts, USA) was then used for the three-dimensional reconstruction. The stack of the grey-scale images was loaded in the Amira and the threshold of objects was determined by using histogram curves and the slices were then joined together. The resultant non-smoothing model of individual objects is shown in following figure.
 
  # Reconstructed 3D structure (not smoothed):
    http://gensei.googlecode.com/svn/web/examples/snapshot.png
