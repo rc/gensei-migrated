@@ -4,7 +4,7 @@
  # One of generated slices:
    http://gensei.googlecode.com/svn/web/examples/slice.05.00_70.png
 
-We assessed the *volume fractions* of objects (in our case red ellipsoids obtained by sensei) V_V(objects,ref) using one of stereological method made on two-dimensional serial sections and _points test_ probe: 
+We assessed the *volume fractions* of objects (in our case red ellipsoids obtained by sensei) _V_V(objects,ref)_ using one of stereological method made on two-dimensional serial sections and _points test_ probe: 
 
 V_V(objects,ref) = V(objects)/V(ref) = \sum_{i=1}^m P_i/P_T,
 
