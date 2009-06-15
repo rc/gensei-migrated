@@ -17,5 +17,5 @@ git clone git://github.com/rc/gensei.git
     http://github.com/rc/gensei/
 
   * latest snapshot:
-    * http://github.com/rc/gensei/zipball/master (zip)
     * http://github.com/rc/gensei/tarball/master (tar.gz)
+    * http://github.com/rc/gensei/zipball/master (zip)
