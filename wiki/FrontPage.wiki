@@ -4,6 +4,8 @@
 
 The purpose of *gensei* is to have a simple, open source tool to generate images of slices of a volume filled with objects (e.g. ellipsoids) with known statistical and other properties (e.g. total volume, volume fractions, number of objects), to verify information obtained by the *stereological methods*.
 
+The documentation of the development version is [http://docs.sfepy.org/gensei/doc-devel/ here].
+
 === News ===
 
  * *16.07.2009* Version 2009.2 released: objects of several classes, detailed report generation (volume, surface, circumference statistics, etc.), example input file.
