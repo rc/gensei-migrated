@@ -4,10 +4,17 @@
 
 The purpose of *gensei* is to have a simple, open source tool to generate images of slices of a volume filled with objects (e.g. ellipsoids) with known statistical and other properties (e.g. total volume, volume fractions, number of objects), to verify information obtained by the *stereological methods*.
 
-The documentation of the development version is [http://docs.sfepy.org/gensei/doc-devel/ here].
+The documentation of the development version is [http://docs.sfepy.org/gensei/doc-devel here].
+
+*esofspy* = evaluation of spatial orientation of fiber systems in Python
+
+This package can be used for automatic evaluation of spatial orientation of fiber systems. The *esofspy* allows for the automatic postprocessing of two-dimesional plots of length densities and roses of directions, as well as the evaluation of preferential directions and the an/isotropy of line systems. To determine the an/isotropy three methods are used: the fractional anisotropy, ellipsoidal anisotropy and chi-square method. The first two methods are based on computing eigenvalues of the length-weighted average tensor of the line segment orientation. The last method involves comparing the observed length densities of lines with the discrete uniform distribution of an isotropic line system using the chi-square-test.
+
+The documentation is [http://docs.sfepy.org/esofspy here].
 
 === News ===
 
+ * *20.12.2010* Initial release of esofspy (version 0.1)
  * *16.07.2009* Version 2009.2 released: objects of several classes, detailed report generation (volume, surface, circumference statistics, etc.), example input file.
 
 =Stereology=
