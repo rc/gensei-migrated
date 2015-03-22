@@ -1,0 +1,62 @@
+Table of contents:
+
+
+# One class of objects #
+
+  * One of generated slices:
+> > ![http://gensei.googlecode.com/svn/web/examples/slice.05.00_70.png](http://gensei.googlecode.com/svn/web/examples/slice.05.00_70.png)
+
+We assessed the **volume fractions** of objects (in our case red ellipsoids obtained by **gensei**) _V\_V(objects,ref)_ using one of the **stereological methods** made on two-dimensional serial sections and points test probe:
+
+_V\_V(objects,ref) = V(objects)/V(ref) = \sum_{i=1}^m P\_i/P\_T_,_
+
+where objects represents ellipsoids, _V(ref)_ is the volume of reference space, in this case the volume of whole stack of serial sections. _V(objects)_ and _V(ref)_ were estimated using the Cavalieri principle according to equation:
+
+_estV(c) =  T a/p \sum_{i=1}^m P\_i_,_
+
+where _c_ corresponds to the ellipsoids and the reference space, respectively, _a/p_ is the known area associated with each point of the test system, _T = 0.140845_ $\mu$m is the distance between two subsequent sections and _P\_i_ is the number of points landing within the relevant component transect on the _i_-th section. Because the parameters of test point probe of objects and reference space were similar, the equation _V\_V(objects,ref)_ could be simplified to:
+
+_V\_V(objects,ref) =  \sum_{i=1}^m P\_i/P\_T_,_
+
+where _P\_i_ was a number of points of randomly translated point grid landing within the object transect on the _i_-th section, _P\_T_ was a number of all points of the test system.
+
+The examples of point test system and counting the intersections using the module PointGrid of the **software Ellipse3D** (http://www.ellipse.sk/index.htm, ViDiTo Systems, Košice, Slovak Republic) follow.
+
+  * Point grid:
+> > ![http://gensei.googlecode.com/svn/web/examples/slice.05.00_70_point_grid.png](http://gensei.googlecode.com/svn/web/examples/slice.05.00_70_point_grid.png)
+  * Points:
+> > ![http://gensei.googlecode.com/svn/web/examples/slice.05.00_70_points.png](http://gensei.googlecode.com/svn/web/examples/slice.05.00_70_points.png)
+
+
+The color channel serial images obtained by **gensei** was changed to gray scale using the **software IrfanView** (http://www.irfanview.com, Irfan Skiljan, Vienna University of Technology, Vienna, Austria). The **software Amira** (http://www.tgs.com, TGS Inc., Massachusetts, USA) was then used for the three-dimensional reconstruction. The stack of the grey-scale images was loaded in the Amira and the threshold of objects was determined by using histogram curves and the slices were then joined together. The resultant non-smoothing model of individual objects is shown in following figure.
+
+  * Reconstructed 3D structure (not smoothed):
+> > ![http://gensei.googlecode.com/svn/web/examples/snapshot.png](http://gensei.googlecode.com/svn/web/examples/snapshot.png)
+
+
+# Multiple classes of objects #
+
+Currently, gensei (git version) supports generating images of more classes. For each class, the geometrical parameters, volume fraction, number of objects, and colour can be set separately. Moreover, the user can choose to generate series of sections in three perpendicular cutting planes. The following image contains objects of three classes (red, green, blue).
+
+  * Objects of three classes:
+> > ![http://gensei.googlecode.com/svn/web/examples/three_classes/slice.x.14.35_90.png](http://gensei.googlecode.com/svn/web/examples/three_classes/slice.x.14.35_90.png)
+
+Such a contrast image can be easily segmented. The following segmentation was performed with the Thresh module of the software Ellipse 3D (Vidito, Košice, Slovak Republic):
+
+  * Segmentation:
+> > ![http://gensei.googlecode.com/svn/web/examples/three_classes/s_014.png](http://gensei.googlecode.com/svn/web/examples/three_classes/s_014.png)
+
+The circumferences of all the object profiles can be saved and their geometrical properties (e.g., circularity, circumference, etc.) can be assessed. Moreover, the objects can be reconstructed in three dimensions after calibration and the contours can be visualized as follows (module Contours, software Ellipse 3D):
+
+  * Contours:
+> > ![http://gensei.googlecode.com/svn/web/examples/three_classes/snap_small1.png](http://gensei.googlecode.com/svn/web/examples/three_classes/snap_small1.png)
+
+The surface of the objects can be reconstructed. The reconstruction gives usually best results when the objects were cut along their long axis. The following visualization was obtained with the Surface module of the software Ellipse 3D:
+
+  * Surface:
+> > ![http://gensei.googlecode.com/svn/web/examples/three_classes/snap_small0.png](http://gensei.googlecode.com/svn/web/examples/three_classes/snap_small0.png)
+
+The volume fraction and the surface of the objects is known and saved together with the image series. Therefore it can be used e.g. for training in histology - the trainee can compare the results of estimating the volume fraction (using the Cavalieri principle) either with the true volume fraction of the whole simulated objects or with the volume fraction based on the series of sections (the latter is usually lower as not all parts of the objects appear on the sections). Another application of the images is testing the settings of various stereological grids used for estimation of volume. When adjusting the geometrical parameters of stereological grids, it is usually desirable to find the lowest number of intersections between the objects and the grid, which still yields an acceptable amount of error. This minimum number of intersections depends on geometry of the objects, and the desired error (for details, see the nomogram published by Gundersen and Jensen, 1987). The user can easily check, whether the current settings give a good estimate of the true (known) volume. In the following example, the volume of red objects was quantified with a rectangular point grid (counted intersections are yellow, module LineSystem, software Ellipse 3D):
+
+  * Red objects were quantified with a rectangular point grid:
+> > ![http://gensei.googlecode.com/svn/web/examples/three_classes/snap_small2.png](http://gensei.googlecode.com/svn/web/examples/three_classes/snap_small2.png)

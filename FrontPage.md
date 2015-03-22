@@ -1,0 +1,60 @@
+**gensei** = generator of serial images, or a [karate style](http://en.wikipedia.org/wiki/Gensei-ryū) (gen = mysterious, sei = control, system), meaning that the methods of quantitative histology (or stereology) are a mysterious process for me :)
+
+The purpose of **gensei** is to have a simple, open source tool to generate images of slices of a volume filled with objects (e.g. ellipsoids) with known statistical and other properties (e.g. total volume, volume fractions, number of objects), to verify information obtained by the **stereological methods**.
+
+The documentation of the development version is [here](http://docs.sfepy.org/gensei/doc-devel).
+
+
+---
+
+
+**esofspy** = evaluation of spatial orientation of fiber systems in Python
+
+This package can be used for automatic evaluation of spatial orientation of fiber systems. The **esofspy** allows for the automatic postprocessing of two-dimesional plots of length densities and roses of directions, as well as the evaluation of preferential directions and the an/isotropy of line systems. To determine the an/isotropy three methods are used: the fractional anisotropy, ellipsoidal anisotropy and chi-square method. The first two methods are based on computing eigenvalues of the length-weighted average tensor of the line segment orientation. The last method involves comparing the observed length densities of lines with the discrete uniform distribution of an isotropic line system using the chi-square-test.
+
+The documentation is [here](http://docs.sfepy.org/esofspy).
+
+
+---
+
+
+### News ###
+
+  * **20.12.2010** Initial release of esofspy (version 0.1)
+  * **16.07.2009** Version 2009.2 released: objects of several classes, detailed report generation (volume, surface, circumference statistics, etc.), example input file.
+
+
+---
+
+
+# Stereology #
+
+Modern **stereological methods** are used for quantitative and qualitative description of objects, such as metals, stones, biological tissues, and their components. The stereology was defined by Weibel (1981) as "a body of mathematical methods relating three-dimensional measurements obtainable on sections of the structure". The principles of stereology have one common feature: They make use of random tissue sections of negligible thickness, on which a test system is placed at random. This test system is made up of **probes** in the form of points, lines, or planar areas, depending on the information sought, see Weibel (1966).
+
+The earlier decade of application of stereological methods on biological specimens (liver cells, muscles, and other systems) is described in Weibel (1966, 1981). From its beginning the stereology reached a great advancement and presently belongs to the most used methods for unbiased quantification of number, length, surface area and volume of specimen attributes of samples of various sizes and structures in the fields of biology, metallography, and petrography and may reveal important information about the function and organization of the parts being studied (organs, tissues, grains, etc.).
+
+The stereological techniques are in detail described in following works: Gundersen and Jensen (1987), Gundersen et al. (1988a), Gundersen et al. (1988b), Howard and Reed (1998),  Mandarim-de-Lacerda (2003),  Mouton (2001), Nyengaard (1999), Nyengaard and Gundersen (2006), Russ and Dehoff (1999).
+
+References:
+
+Gundersen and Jensen (1987): Gundersen, H. J. G. and Jensen, E. B. (1987). The efficiency of systematic sampling in stereology and its prediction. Journal of Microscopy, 147:229–263. (http://www.ncbi.nlm.nih.gov/pubmed/3430576)
+
+Gundersen et al. (1988a):  Gundersen, H. J. G., Bendtsen, T. F., Korbo, L., Marcussen, N., Møller, A., Nielsen, K., Nyengaard, J. R., Pakkenberg, B., Sørensen, F. B., Vesterby, A., and West, M. J. (1988b). Some new, simple and efficient stereological methods and their use in pathological research and diagnosis. Acta Pathologica, Microbiologica et Immunologica Scandinavica, 96:379–394. (http://www.ncbi.nlm.nih.gov/pubmed/3288247)
+
+Gundersen et al. (1988b): Gundersen, H. J. G., Bagger, P., Bendtsen, T. F., Evans, S. M., Korbo, L., Marcussen, N., Møller, A., Nielsen, K., Nyengaard, J. R., Pakkenberg, B., Sørensen, F. B., Vesterby, A., and West, M. J. (1988a). The new stereological tools: Disector, fractionator, nucleator and point sampled intercepts and their use in pathological research and diagnosis. Acta Pathologica, Microbiologica et Immunologica Scandinavica, 96:857–881. (http://www.ncbi.nlm.nih.gov/pubmed/3056461)
+
+Howard and Reed (1998): Howard, C. V. and Reed, M. G. (1998). Unbiased Stereology: Three Dimensional Measurement in Microscopy. Royal Microscopical Society, Microscopy Handbook Series No. 41. Springer, New York.
+
+Mandarim-de-Lacerda (2003): Mandarim-de-Lacerda, C. A. (2003). Stereological tools in biomedical research. Annals of the Brazilian Academy of Sciences, 75(4):469–486.(http://www.ncbi.nlm.nih.gov/pubmed/14605681)
+
+Mouton (2001): Mouton, P. R. (2001). Principles and Practices of Unbiased Stereology: An Introduction for Bioscientists. The Johns Hopkins University Press, USA, Baltimore.
+
+Nyengaard (1999): Nyengaard, J. R. (1999). Stereologic methods and their application in kidney research. Journal of the American Society of Nephrology, 10:1100–1123. (http://jasn.asnjournals.org/cgi/content/full/10/5/1100)
+
+Nyengaard and Gundersen (2006): Nyengaard, J. R. and Gundersen, H. J. G. (2006). Sampling for stereology in lungs. European Respiratory Review, 15(101):107–114. (http://err.ersjournals.com/cgi/content/abstract/15/101/107)
+
+Russ and Dehoff (1999): Russ, J. C. and Dehoff, R. T. (1999). Practical Stereology. Plenum Press, New York.
+
+Weibel (1966): Weibel, E. R., Kistler, G. S., and Scherle,W. F. (1966). Practical stereological methods for morphometric cytology. The Journal of Cell Biology, 30:23–38. (http://www.ncbi.nlm.nih.gov/pubmed/5338131)
+
+Weibel (1981): Weibel, E. R. (1981). Stereological methods in cell biology: Where are we - where are we going? The Journal of Histochemistry and Cytochemistry, 29(9):1043–1052. (http://www.jhc.org/cgi/reprint/29/9/1043)
